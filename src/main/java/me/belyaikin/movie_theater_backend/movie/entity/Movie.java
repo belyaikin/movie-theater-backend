@@ -13,9 +13,9 @@ public class Movie {
     @GeneratedValue
     public Long id;
 
-    @Column
     private String name;
-
-    @Column
     private String description;
+
+    @Column(name = "image_url")
+    private String imageUrl;
 }
